@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.gimmyeongsu.quickcoding02.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Coding 02"
+        android:id="@+id/textview_main"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/button_send"
+        android:text="send"
+        android:onClick="onclick_send"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="smaller"
+        android:id="@+id/button_smaller"
+        android:layout_alignBaseline="@+id/button_bigger"
+        android:layout_alignBottom="@+id/button_bigger"
+        android:layout_centerHorizontal="true"
+        android:onClick="onclick_smaller"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bigger"
+        android:id="@+id/button_bigger"
+        android:layout_below="@+id/button_send"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="123dp"
+        android:onClick="onclick_Bigger"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your number is 0"
+        android:id="@+id/textview_result"
+        android:textSize="30dp"
+
+        android:layout_above="@+id/button_smaller"
+        android:layout_alignLeft="@+id/button_bigger"
+        android:layout_alignStart="@+id/button_bigger"
+        android:layout_marginBottom="49dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bingo"
+        android:id="@+id/button_bingo"
+        android:layout_below="@+id/textview_result"
+        android:layout_toRightOf="@+id/textview_result"
+        android:layout_toEndOf="@+id/textview_result"
+        android:onClick="onclick_bingo"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="96dp"
+        android:id="@+id/editText"
+        android:text="0"
+        android:layout_below="@+id/textview_main"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
