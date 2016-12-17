@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerArray">
+        <item>[활동 선택]</item>
+        <item>식사</item>
+        <item>여가</item>
+        <item>공부</item>
+        <item>기타</item>
+    </string-array>
+
+</resources>
